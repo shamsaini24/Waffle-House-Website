@@ -1,0 +1,247 @@
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer {
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 40px; /* Vertically center the text there */
+  padding-top: 2%;
+
+}
+
+.jumbotron{
+  background: url(images/jumbobg.png);
+  background-size:100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  color:black;
+  height: inherit;
+}
+
+#menujumbo{
+   background: url(images/1500-banner.jpg);
+   color:white;
+}
+
+#performancesjumbo {
+    background: url(images/concert.png);
+    background-size: 100%;
+    background-position: left;
+    color: white;
+    width: 100%;
+}
+
+#jobsjumbo {
+    background: url(images/jobs.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#bgimg{
+    background: url(images/coffee-banner.jpg);
+    background-size: 100%;
+    padding: 10%;
+    color: black;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.textContainer { 
+    height: 305px; 
+    line-height: 300px;
+}
+
+.textContainer p {
+    display: inline-block;
+    font-size: 4em;
+}
+
+.textContainer h2  {
+    display: inline-block;
+    font-size:3em;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5%;
+}
+.textContainer ul{
+   display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5%;
+    text-align:left;
+    line-height:50px;
+}
+
+#bgimgFood{
+    background: url(images/foodbg.jpg);
+    background-size: 100%;
+    padding: 10%;
+    color: black;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+#bgimgMusic{
+  background: url(images/musicbg.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+
+}
+
+#bgimgEntertainment{
+  background: url(images/entertainbg.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+
+.divtext{
+   color:white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+
+
+.parallax {
+    background-image: url(images/marina.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.textbackground {
+  background-color: white;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: larger;
+}
+
+.textbackground img {
+  margin: auto;
+}
+
+form {
+    width: 100%;
+}
+
+.description{
+  font-size:32px;
+  color: #3c3d61;
+  margin-top:-5%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 0.3em;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.textContainer:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #999cc9;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.mobileimage {
+  height: 50%;
+}
+
+.zoom {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  position: relative;
+  z-index: 100;
+}
+
+.media img {
+  padding: 25px;
+}
+
+iframe {
+  padding: 15px;
+}
+
+.intrinsiccontainer {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 16x9 aspect ratio */
+.intrinsiccontainer-16x9 {
+    padding-bottom: 56.25%;
+}
+
+.intrinsiccontainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.perform {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+iframe{
+  border:0px;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+}

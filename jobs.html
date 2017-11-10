@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">        
+    <title>Marina Cafe - Jobs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="css/spacelab/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<body class="parallax">
+    <div class="hidden-sm hidden-xs">
+        <img src="images/logo.png" alt="logo">
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Marina Cafe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="menu.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="menu.html#Breakfast">Breakfast</a></li>
+                            <li><a href="menu.html#Lunch">Lunch</a></li>
+                            <li><a href="menu.html#Dinner">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="performances.html">Performances</a></li>
+                    <li class="active disabled"><span class="sr-only">(current)</span><a href="#">Apply for Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <div class="container-fluid">
+        
+        <div class="jumbotron" id="jobsjumbo">
+            <h1>Apply for Jobs</h1> 
+            <p>Be a part of the amazing Marina Cafe team!</p>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="textbackground text-center">
+                <p>Are you a college student who would like a part time job?</p>
+                <p>Apply at Marina Cafe -- we will work around your school schedule.</p>
+                <p>Complete the information form below to get the application process started.</p>
+                <p>Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.</p>
+                <p>Marina Cafe is an equal opportunity employer.</p>
+                <p>We celebrate the diversity of our associates!</p>
+            </div>
+            
+            <br />
+            
+            <div class="textbackground">
+                <form class="form" action="job_applications.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:<span class="red"> *</span></label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:<span class="red"> *</span></label>
+                        <input type="Email" name="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="phone">Phone:<span class="red"> *</span></label>
+                        <input type="Tel" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+                    </div>
+                    <div class="checkbox form-group">
+                        <p>What kind of job are you looking for?<span class="red"> *</span></p>
+                        <label><input type="checkbox" name="bar_associate" value="">Bar Associate</label>
+                        <label><input type="checkbox" name="server" value="">Server</label>
+                        <label><input type="checkbox" name="clean_maintenance" value="">Cleaning & Maintenance</label>
+                        <label><input type="checkbox" name="manager" value="">Manager</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Employment type: <span class="red"> *</span></label><br />
+                        <input  type="radio" name="employment_type" value="full-time" required> Full-time
+                        <input  type="radio" name="employment_type" value="part-time" required> Part-time<br>
+                
+                    </div>
+                    <div class="form-group">
+                        <label for="yearsexp">Years of Experience:<span class="red"> *</span></label>
+                        <select class="form-control" name="years_of_experience" id="yearsexp" required>
+                            <option disabled selected value>Select an Option...</option>
+                            <option>No experience</option>
+                            <option>Less than 1 year</option>
+                            <option>More than 1 year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="comments">Comments:</label>
+                        <input type="text" name="comments" class="form-control" id="comments" placeholder="Please leave a Comment!">
+                    </div>
+                    <div>
+                        <input type="reset" class="btn btn-info" value="Reset">
+                        <input type="submit" class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+                <br />
+                <p><span class="red">*</span> means a required field</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="container-fluid bg-info">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                        <h3>About</h3>Copyright<sup>&copy;</sup> 2017 Marina Cafe <br /><a href='&#109;ailt&#111;&#58;marina&#64;&#37;6D&#37;61r&#105;%&#54;Eac&#97;&#102;&#101;&#46;%63&#111;&#109;'>&#109;arina&#64;ma&#114;ina&#99;&#97;&#102;e&#46;com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                        <h3>Location</h3>667 Lawrence Ave<br /> Kelowna, BC V1Y 6L8 <br />1-888-888-8888
+                    </div>
+                    <div class="col-lg-6 col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
+
+<!-- Banner logo from http://www.sign-maker.net/artwork/images/maritime.jpg -->
+<!-- Jumbotron jobs banner image from http://yourdin-66b8.kxcdn.com/wp-content/uploads/2016/11/Best-Espresso-Machine-Under-200.jpg -->

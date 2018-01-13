@@ -3,11 +3,11 @@
     
     <head>
         <meta charset="utf-8">        
-        <title> Marina Cafe </title>
+        <title> Waffle House </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" media="screen" href="css/spacelab/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="css/journal/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
     
     <body>
     <div class="hidden-sm hidden-xs">
-        <img src="images/logo.png" alt="logo">
+        <img src="images/waffle_house.png" alt="logo">
     </div>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <span class="navbar-brand">Marina Cafe</span>
+                <span class="navbar-brand">Waffle House</span>
             </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -41,8 +41,9 @@
               <li><a href="menu.html#Dinner">Dinner</a></li>
             </ul>
           </li>
-          <li><a href="performances.html">Performances</a></li>
-          <li><a href="jobs.html">Apply for Jobs</a></li>
+          <li><a href="performances.html">Specials</a></li>
+          <li><a href="about.html">About</a></li>
+
         </ul>
         
         </div>
@@ -51,52 +52,65 @@
   
     <div class="container-fluid">
       <div class="jumbotron" id="indexjumbo">
-        <h1>Welcome to the Marina Cafe</h1>      
-        <p>The snazziest cafe on the dock!</p>      
+        <h1>Welcome to the Waffle House</h1>      
+        <p>Established since 1954</p>      
       </div>
     </div>
     
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 text-center"><h1><i>We offer much to make your stay with us a memorable one.</i></h1></div>
+        <div class="col-xs-12 text-center"><h1><i>We offer you and your family much to make your stay a memorable one</i></h1></div>
       </div>
        <hr class="section-heading-spacer">
       <div class="row">
         <div class="col-sm-4 text-center textContainer"><p>Drinks</p></div>
-        <div class="col-sm-4 text-center visible-xs description"><p>From caffe latte to chai tea latte, we sell everything that's related to the coffee.<b> EVERYTHING.</b></p></div>
-        <div class="col-sm-8 hidden-xs" id="bgimg"></div>
+        <div class="col-sm-4 text-center visible-xs description"><p>Have a sip of one of our delicious milkshakes, freshly made by us. Not a fan of milkshakes? No problem. We have all kinds of soda, juice and even beer.</p></div>
+        <div class="col-sm-8 hidden-xs textContainer" id="bgimg">
+          <div class="overlayDrink">
+            <div class="text">Milkshakes, soda, juice, or beer. We have everything to make your meal even better.</div>
+          </div>
+        </div>
       </div>
+      <p></p>
+      
        <hr class="section-heading-spacer">
+       
       <div class="row">
-        <div class="col-sm-8 hidden-xs" id="bgimgFood"></div>
+        <div class="col-sm-8 hidden-xs textContainer" id="bgimgFood">
+          <div class="overlayFood">
+            <div class="text">From breakfast to lunch, we have everything to keep your appetite sated.</div>
+          </div>
+        </div>
         <div class="col-sm-4 text-center textContainer"><p>Food</p></div>
-        <div class="col-sm-8 text-center visible-xs description"><p>Complement your morning coffee with wholesomely delicious muffin, bagel, donut,
-        or anything else. We're sure you will be satisfied with our selection.</p></div>
-
+        <div class="col-sm-8 text-center visible-xs description">
+          <p>From breakfast, lunch, to dinner. We have you covered with any craving you have at the time. We may be called waffle house, but we do so much more. Burgers, sandwiches, steaks, salads, and so much more.</p>
+        </div>
       </div>
        <hr class="section-heading-spacer">
       
       <div class="row">
         <div class="col-sm-4 text-center textContainer" id="bgimgMusic">
-          <p class="divtext">Music</p>
+          <p class="divtext">Family</p>
           <div class="overlay">
-            <div class="text"><p>Live shows every week.</p></div>
+            <div class="text">We are the right place for a family gathering</div>
           </div>
         </div>
         
-        
-        
-        <div class="col-sm-4 text-center textContainer bg-danger"><h2>We also offer:
-        <ul>
-          <li>Free Parking</li>
-          <li>Free Wifi</li>
-        </ul></h2>
+        <div class="col-sm-4 text-center textContainer" id="index-info">
+          <div id="index-info2">
+          <h2>We also offer:
+          <ul>
+            <li>Dine-in or Take-out,</li>
+            <li>Daily Specials.</li>
+          </ul>
+          </h2>
+          </div>
         </div>
         
         <div class="col-sm-4 text-center textContainer" id="bgimgEntertainment">
-          <p class="divtext">Entertainment</p>
+          <p class="divtext">Parties</p>
           <div class="overlay">
-            <div class="text"><p>Karaoke, billards, darts, and much more...</p></div>
+            <div class="text">We make reservations for birthdays, or any occasion.</div>
           </div>
         </div>
         
@@ -105,20 +119,36 @@
            
     </div>
     
-    <footer class="footer">
-        <div class="container-fluid bg-info">
+     <footer class="footer">
+        <div class="container-fluid" id="footer">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="col-lg-6 col-md-6"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <h3>About</h3>Copyright<sup>&copy;</sup> 2017 Marina Cafe <br /><a href='&#109;ailt&#111;&#58;marina&#64;&#37;6D&#37;61r&#105;%&#54;Eac&#97;&#102;&#101;&#46;%63&#111;&#109;'>&#109;arina&#64;ma&#114;ina&#99;&#97;&#102;e&#46;com</a>
+                
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Location</h3>636 - 6th Street<br /> New Westminster<br />BC, V3L 3C3
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <h3>Location</h3>667 Lawrence Ave<br /> Kelowna, BC V1Y 6L8 <br />1-888-888-8888
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Contact Info</h3>Phone: (604) 524-8118<br />Email: <a href='&#109;ai&#108;to&#58;i&#37;6Efo%&#52;0waf&#102;leh&#111;u%73e%72esta&#117;&#114;%61n&#116;&#46;&#37;63o&#109;'>info&#64;wa&#102;fleh&#111;usere&#115;t&#97;ura&#110;t&#46;c&#111;m</a> <br />
                     </div>
-                    <div class="col-lg-6 col-md-6"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Hours</h3><ul>
+                          <li>Monday - Friday: 7am - 8pm</li>
+                          <li>Saturday: 7am - 8pm</li>
+                          <li>Sunday: 8am - 3:30pm</li>
+                          <li>Closed: Christmas, New Years</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Waffle House || All Rights Reserved <br />
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,8 +156,3 @@
     
     </body>
 </html>
-
-<!--- Banner logo from http://www.sign-maker.net/artwork/images/maritime.jpg -->
-<!--- Drinks background from https://www.momtrends.com/2015/09/ninja-coffee-bar/ -->
-<!--- Foods background from http://travelingmama.net/travel-file-kaffebrenneriet-coffee-oslo/ -->
-<!--- Entertainment background from https://www.rockpoolevents.com/wp-content/uploads/2016/11/BBC-EQ-30-1.jpg -->

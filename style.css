@@ -17,9 +17,15 @@ body {
   height: 60px;
   line-height: 40px; /* Vertically center the text there */
   padding-top: 2%;
-
 }
 
+#footer{
+    background-color: #ffebcd	;
+}
+
+.footer-text{
+  font-size: 1.1em;
+}
 .jumbotron{
   background: url(images/jumbobg.png);
   background-size:100%;
@@ -30,8 +36,9 @@ body {
 }
 
 #menujumbo{
-   background: url(images/1500-banner.jpg);
+   background: url(images/menujumbo.jpg);
    color:white;
+   background-size: 95%;
 }
 
 #performancesjumbo {
@@ -48,38 +55,44 @@ body {
     background-repeat: no-repeat;
     background-position: left;
 }
+#indexjumbo {
+    background: url(images/indexjumbobg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 
 #bgimg{
-    background: url(images/coffee-banner.jpg);
-    background-size: 100%;
+    background: url(images/drinksbg.jpg);
+    background-size: 50%;
     padding: 10%;
     color: black;
     height: 100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-
 }
 
 .textContainer { 
     height: 305px; 
-    line-height: 300px;
 }
 
 .textContainer p {
     display: inline-block;
     font-size: 4em;
+    line-height: 300px;
+
 }
 
 .textContainer h2  {
     display: inline-block;
-    font-size:3em;
+    font-size:2em;
     margin-left:auto;
     margin-right:auto;
     padding-top:5%;
 }
 .textContainer ul{
-   display: inline-block;
     margin-left:auto;
     margin-right:auto;
     padding-top:5%;
@@ -88,7 +101,7 @@ body {
 }
 
 #bgimgFood{
-    background: url(images/foodbg.jpg);
+    background: url(images/foodbg2.jpeg);
     background-size: 100%;
     padding: 10%;
     color: black;
@@ -96,7 +109,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-  
 }
 
 #bgimgMusic{
@@ -118,8 +130,6 @@ body {
   -webkit-text-stroke-color: black;
 }
 
-
-
 .parallax {
     background-image: url(images/marina.png);
     height: 100%;
@@ -127,7 +137,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .textbackground {
@@ -152,9 +161,9 @@ form {
 }
 
 .text {
-  white-space: nowrap; 
+  white-space: pre-line ;
   color: white;
-  font-size: 0.3em;
+  font-size: 1.5em;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -168,16 +177,50 @@ form {
   height: 100%;
 }
 
+
 .overlay {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #999cc9;
+  background-color: #FF9592;
   overflow: hidden;
   width: 100%;
   height:0;
   transition: .5s ease;
+}
+
+.overlayFood {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF9592;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.textContainer:hover .overlayFood {
+  width: 100%;
+}
+
+.overlayDrink {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #FF9592;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.textContainer:hover .overlayDrink {
+  width: 100%;
+  left: 0;
 }
 
 .mobileimage {
@@ -244,4 +287,24 @@ iframe{
 
 .carousel-inner img {
   margin: 0 auto;
+}
+
+#about{
+  margin-left: 5%;
+  background-color: #FFBEBC;
+  border-radius: 2%
+}
+
+#index-info{
+  background-color: #eb6864;
+}
+
+hr {
+    display: block;
+    height: 4px;
+    border: 0;
+    border-top: 3px groove #A7221F;
+    border-bottom: 3px groove #CB413D;
+    margin: 1em 0;
+    padding: 0; 
 }

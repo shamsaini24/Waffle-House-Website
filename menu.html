@@ -3,11 +3,11 @@
     
     <head>
         <meta charset="utf-8">        
-        <title> Marina Cafe - Menu </title>
+        <title> Waffle House - Menu </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" media="screen" href="css/spacelab/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="css/journal/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
 
     <body class="parallax">
     <div class="hidden-sm hidden-xs">
-        <img src="images/logo.png" alt="logo">
+        <img src="images/waffle_house.png" alt="logo">
     </div>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                <a class="navbar-brand" href="index.html">Waffle House</a>
             </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -41,8 +41,9 @@
               <li><a href="#Dinner">Dinner</a></li>
             </ul>
           </li>
-          <li><a href="performances.html">Performances</a></li>
-          <li><a href="jobs.html">Apply for Jobs</a></li>
+          <li><a href="performances.html">Specials</a></li>
+          <li><a href="about.html">About</a></li>
+
         </ul>
         
         </div>
@@ -52,7 +53,6 @@
     <div class="container-fluid">
       <div class="jumbotron" id="menujumbo">
         <h1>The Menu</h1>      
-        <p>Take a look at what we're making.</p>      
       </div>
     </div>
     
@@ -69,20 +69,20 @@
 
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/caffelatte.jpg" alt="caffelatte" width="460" height="345">
+        <img src="images/2016-03-19.jpg" alt="caffelatte" width="460" height="345">
         <div></div>
       </div>
 
       <div class="item">
-        <img src="images/coffeeking.jpg" alt="coffeeking" width="460" height="345">
+        <img src="images/IMG_20170419_142149.jpg" alt="coffeeking" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="images/espresso.jpg" alt="espresso" width="460" height="345">
+        <img src="images/2017-06-17(1).jpg" alt="espresso" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="images/icedcap.jpg" alt="icedcap" width="460" height="345">
+        <img src="images/2017-06-17.jpg" alt="icedcap" width="460" height="345">
       </div>
     </div>
 
@@ -98,26 +98,70 @@
   </div>
 </div>
        <hr class="section-heading-spacer" >
+       <div class="media textbackground">
+                <div class="media-body">
+                    <div>
+                        <h2 class="text-center">Good eats, any time of the day!</h2>
+                        <p class="text-center">Craving waffles in the evening? We have you covered.
+                        Our entire menu is available to you, from 7am - 8pm. All day is breakfast, lunch, and dinner at the Waffle House.</p>
+                    </div>
+                </div>
+            </div>
         <a id="Breakfast"></a>
 
  <div class="media textbackground">
             <div class="media-left media-top hidden-sm hidden-xs">
                <img class="media-object img-circle" src="images/foodbg.jpg" alt="breakfast">
             </div>
-            <div class="media-left media-top hidden-lg hidden-md">
-              <img class="media-object img-circle" src="images/foodbgsmall.png" alt="breakfast">
-            </div>
             <div class="media-body">
                 <h3 class="media-heading text-center">Breakfast</h3>
                 <div class="menu">    
                     <p class="text-center">Breakfast is the most important meal of the day, which is why we serve only the best.</p><br />
-                    <p>We freshly bake:</p>
-                        <ul>
-                            <li>Donuts,</li>
-                            <li>Bagles,</li>
-                            <li>Muffins,</li>
-                            <li>And whatever your heart desires.</li>
+                    <p>Wake up to one of our breakfast dishes, made fresh and hot:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#waffle-expanded">Waffles</button>
+                              <div id="waffle-expanded" class="collapse">
+                                Some of our most popular items include: 
+                                 <ul>
+                                     <br>
+                                    <li>Waffle with peach, strawberry, or blueberry.</li>
+                                    <br>
+                                    <li>A waffle with bacon.</li>
+                                    <br>
+                                    <li>Or our house special, a waffle with two eggs, two pieces of bacon, hashbrowns, and butter.</li>
+                                </ul> 
+                              </div>
+                            </li>
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pancake-expanded">Pancakes</button>
+                              <div id="pancake-expanded" class="collapse">
+                                Some of our most popular items include: 
+                                <ul>
+                                    <br>
+                                    <li>The Classic Pancake Breakfast: Three pancakes with creamy butter and syrup.</li>
+                                    <br>
+                                    <li>Pancake Special: Two pancakes, two scrambled eggs, two sausages, and your choice of either two pieces of bacon, hashbrowns, or panfries.</li>
+                                </ul> 
+                              </div>
+                            </li>
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#omlette-expanded">Omlettes</button>
+                              <div id="omlette-expanded" class="collapse">
+                                Some of our most popular items include:
+                                <ul>
+                                    <br>
+                                    <li>Veggie Omlette: Made with three eggs filled with red and green peppers, mushrooms, tomatoes, and chedder cheese.</li>
+                                    <br>
+                                    <li>Chili Omlette: Our homemade chili is combined with three eggs, topped off with cheese.</li>
+                                    <br>
+                                    <li>Denver Omlette: Three eggs filled with dices of ham, tomatoes, and green onions.</li>
+                                </ul>
+                                <br>
+                                <blockquote class="bg-primary">All omlettes have the choice of hashbrowns, pan fries, or grilled tomatoes.</blockquote>
+                              </div>
+                            </li>
                         </ul>
+                        <sub>*Menu is subject to change.</sub>
+                        
+
                 </div>
             </div>
         </div>
@@ -129,20 +173,61 @@
             <div class="media-body">
                 <h3 class="media-heading text-center">Lunch</h3>
                 <div class="menu">    
-                    <p class="text-center">Having a lunch couldn't be better by the sea. Be it cold or warm, we have something to keep your appetite sated. </p><br />
+                    <p class="text-center">At lunch we serve hearty meals at a brisk pace.
+                    Our menu opens up to many types of food, all of which we're sure you'll enjoy.</p><br />
                     <p>Our lunch offerings include:</p>
-                    <ul>
-                        <li>Sandwiches</li>
-                        <li>Wraps</li>
-                        <li>Pies</li>
-                    </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#fish-expanded">Fish</button>
+                              <div id="fish-expanded" class="collapse">
+                                Some of our most popular items include: 
+                                 <ul>
+                                     <br>
+                                    <li>Fish & Chips: Lightly battered cod served with coleslaw and tartar sauce. With your choice of French Fries or pan fries.</li>
+                                    <br>
+                                    <li>Wild Alaskan Salmon*: Boneless salmon pan seared and brushed with basil butter.</li>
+                                    <br>
+                                    <li>Filet of Sole*: Lightly breaded, grilled and served with tartar sauce mixed with vegetables.</li>
+                                    <br>
+                                    <li>Cod Neapolitan*: Wild Pacific ling cod topped with italian tomato sauce.</li>
+                                </ul>
+                                <br />
+                                <blockquote class="bg-primary">*Come with your choice of mashed potatos, baked potatos, or rice.</blockquote>
+                              </div>
+                            </li>
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#steak-expanded">Steak/Pork</button>
+                              <div id="steak-expanded" class="collapse">
+                                Some of our most popular items include: 
+                                <ul>
+                                    <br>
+                                    <li>New York Steak: Fire grilled 6oz Alberta steak topped with sauteed mushrooms served with vegetables.</li>
+                                    <br>
+                                    <li>Roast Pork: Slow roasted pork come with vegetables and served with apple sauce and gravy.</li>
+                                    <br>
+                                    <li>Senior Sailsbury Steak: Grilled lean beef patty topped with sauteed onions and homemade gravy.</li>
+                                </ul>
+                                <br />
+                                <blockquote class="bg-primary">Come with your choice of mashed potatos, baked potatos, or rice.</blockquote>
+                              </div>
+                            </li>
+                            <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#chicken-expanded">Chicken</button>
+                              <div id="chicken-expanded" class="collapse">
+                                Some of our most popular items include:
+                                <ul>
+                                    <br>
+                                    <li>Butter Chicken: Boneless pieces of BC chicken, simmered in mild butter sauce and served with rice and vegetables.</li>
+                                    <br>
+                                    <li>Chicken Pot Pie: Served in a saucepan, chicken is combined with carrots, peas, onions, and celery with a seasoning of salt and pepper.</li>
+                                    <br>
+                                    <li>Lemon Chicken: Tender chicken pieces, mixed with noodles cooked in soy sauce. Topped with boiled bean sprouts and served with lemon sauce.</li>
+                                </ul>
+                              </div>
+                            </li>
+                        </ul>
+                        <sub>*Menu is subject to change.</sub>
                 </div>
             </div>
             <div class="media-right media-top hidden-sm hidden-xs">
               <img class="media-object img-circle" src="images/lunch.jpg" alt="lunch">
-            </div>
-            <div class="media-right media-top hidden-lg hidden-md">
-              <img class="media-object img-circle" src="images/lunchsmall.jpg" alt="lunch">
             </div>
         </div>
         
@@ -154,37 +239,56 @@
             <div class="media-left media-top hidden-sm hidden-xs">
               <img class="media-object img-circle" src="images/dinner.jpg" alt="dinner">
             </div>
-            <div class="media-left media-top hidden-lg hidden-md">
-              <img class="media-object img-circle" src="images/dinnersmall.jpg" alt="dinner">
-            </div>
             <div class="media-body">
                 <h3 class="media-heading text-center">Dinner</h3>
                 <div class="performances">    
-                    <p class="text-center">End off your day with a warm meal in a cozy place. Seaside dinners with good company will be common occournce at the Marina.</p><br />
-                    <p>We serve:</p>
+                    <p class="text-center">End off your day with a warm meal amongst good company. From sandwichs, to soups, and everything in betweeen.</p><br />
+                    <p>Some of our most popular dinner offerings:</p>
                     <ul>
-                        <li>Toasted Italian Chicken</li>
-                        <li>Turkey Breast with Gravy</li>
+                        <li>Hot Turkey Sandwich: Fresh oven roasted BC turkey served open faced with layers of gravy and cranberry sauce, all served with mixed vegetables.</li>
+                        <br>
+                        <li>Shepherd's Pie: Cooked ground beef with chopped onion, topped with mashed potatos. Oven baked until brown and served mixed vegetables on the side.</li>
+                        <br>
+                        <li>Chicken Teriyaki: Flame broiled chicken breast with teriyaki sauce and topped with a grilled pinapple.</li>
+                        <br>
                     </ul>
+                    <sub>*Menu is subject to change.</sub>
                 </div>
             </div>
         </div>
-   
+        
+        *Items are subject to change. Item description and choices may differ.
     
-    <footer class="footer">
-        <div class="container-fluid bg-info">
+ <footer class="footer">
+        <div class="container-fluid" id="footer">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="col-lg-6 col-md-6"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <h3>About</h3>Copyright<sup>&copy;</sup> 2017 Marina Cafe <br /><a href='&#109;ailt&#111;&#58;marina&#64;&#37;6D&#37;61r&#105;%&#54;Eac&#97;&#102;&#101;&#46;%63&#111;&#109;'>&#109;arina&#64;ma&#114;ina&#99;&#97;&#102;e&#46;com</a>
+                
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Location</h3>636 - 6th Street<br /> New Westminster<br />BC, V3L 3C3
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <h3>Location</h3>667 Lawrence Ave<br /> Kelowna, BC V1Y 6L8 <br />1-888-888-8888
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Contact Info</h3>Phone: (604) 524-8118<br />Email: <a href='&#109;ai&#108;to&#58;i&#37;6Efo%&#52;0waf&#102;leh&#111;u%73e%72esta&#117;&#114;%61n&#116;&#46;&#37;63o&#109;'>info&#64;wa&#102;fleh&#111;usere&#115;t&#97;ura&#110;t&#46;c&#111;m</a> <br />
                     </div>
-                    <div class="col-lg-6 col-md-6"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-text">
+                    <div class="col-lg-8">
+                        <h3>Hours</h3><ul>
+                          <li>Monday - Friday: 7am - 8pm</li>
+                          <li>Saturday: 7am - 8pm</li>
+                          <li>Sunday: 8am - 3:30pm</li>
+                          <li>Closed: Christmas, New Years</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Waffle House || All Rights Reserved <br />
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,7 +297,6 @@
     
     </body>
 </html>
-
 <!--- Banner logo from http://www.sign-maker.net/artwork/images/maritime.jpg -->
 <!--- Lunch image from http://chicago.seriouseats.com/images/2013/01/20121219-235650-a-sandwich-a-day-iguana-cafe-italian-sandwich.jpg -->
 <!--- Dinner image from https://www.groupon.com/biz/olympia-wa/shipwreck-cafe-west -->

@@ -2,7 +2,6 @@ html {
   position: relative;
   min-height: 100%;
   overflow-x: hidden;
-
 }
 
 body {
@@ -61,7 +60,6 @@ body {
     background-repeat: no-repeat;
     background-position: left;
 }
-
 
 #bgimg{
     background: url(images/drinksbg.jpg);
@@ -176,7 +174,6 @@ form {
   bottom: 0;
   height: 100%;
 }
-
 
 .overlay {
   position: absolute;

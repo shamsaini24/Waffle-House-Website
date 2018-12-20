@@ -34,6 +34,20 @@ body {
   height: inherit;
 }
 
+.navbar{
+  margin-bottom: 21px;
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu{
+    background-color:transparent;
+    border:none;
+  } 
+  .navbar-drop{
+    color:white;
+  }
+}
+
 #menujumbo{
    background: url(images/menujumbo.jpg);
    color:white;
@@ -80,7 +94,6 @@ body {
     display: inline-block;
     font-size: 4em;
     line-height: 300px;
-
 }
 
 .textContainer h2  {

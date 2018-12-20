@@ -8,6 +8,8 @@ body {
   /* Margin bottom by footer height */
   margin-left: 0;
   margin-right: 0;
+  font-family: Georgia,"Times New Roman",Times,serif;
+
 }
 
 .footer {
@@ -37,6 +39,10 @@ body {
   margin-bottom: 21px;
 }
 
+.nav-item{
+  margin-left:10px;
+}
+
 @media (max-width: 768px) {
   .dropdown-menu{
     background-color:transparent;
@@ -45,6 +51,10 @@ body {
   .navbar-drop{
     color:white;
   }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
 }
 
 #menujumbo{
@@ -83,7 +93,6 @@ body {
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-
 }
 
 .overlay-title{
@@ -148,12 +157,12 @@ body {
 }
 
 .parallax {
-    background-image: url(images/marina.png);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(images/marina.png);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .textbackground {
@@ -166,11 +175,6 @@ body {
 .textbackground img {
   margin: auto;
 }
-
-form {
-    width: 100%;
-}
-
 .description{
   font-size:32px;
   color: #3c3d61;
@@ -239,82 +243,31 @@ form {
   left: 0;
 }
 
-.mobileimage {
-  height: 50%;
-}
-
-.zoom {
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
-}
-
-.zoom:hover,
-.zoom:active,
-.zoom:focus {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  position: relative;
-  z-index: 100;
-}
-
 .media img {
   padding: 25px;
-}
-
-iframe {
-  padding: 15px;
-}
-
-.intrinsiccontainer {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-}
-
-/* 16x9 aspect ratio */
-.intrinsiccontainer-16x9 {
-    padding-bottom: 56.25%;
-}
-
-.intrinsiccontainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.perform {
-  font-weight: bold;
-}
-
-.red {
-  color: red;
-}
-
-iframe{
-  border:0px;
 }
 
 .carousel-inner img {
   margin: 0 auto;
 }
 
-#about{
-  margin-left: 5%;
-  background-color: #FFBEBC;
-  border-radius: 2%
+#about p{
+  color:#522727
 }
 
 #index-info{
   background-color: #fd8480;
 }
 
+.blockquote{
+  border-left: 5px solid #fd8480;
+  padding-left:30px;
+  margin-left:20px;
+}
+
+.lead{
+  font-size:1.4em;
+}
 hr {
     display: block;
     height: 4px;

@@ -43,7 +43,7 @@ body {
   margin-left:10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .dropdown-menu{
     background-color:transparent;
     border:none;
@@ -59,7 +59,6 @@ body {
 
 #menujumbo{
    background: url(images/menujumbo.jpg);
-   color:white;
    background-size: 95%;
 }
 
@@ -263,6 +262,19 @@ body {
   border-left: 5px solid #fd8480;
   padding-left:30px;
   margin-left:20px;
+}
+
+.menu-side{
+  color:white;
+  background:#eb6864; 
+  padding:10px;
+  border-left: 5px solid rgb(220, 220, 220);
+  padding-left:30px;
+  margin-left:20px;
+}
+
+#menu-heading-bar{
+  margin-bottom:15px;
 }
 
 .lead{

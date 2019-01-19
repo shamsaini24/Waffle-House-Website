@@ -109,6 +109,12 @@ body {
     line-height: 300px;
 }
 
+@media (max-width: 767px){
+  .textContainer p {
+    font-size: 3.5em;
+  }
+}
+
 .textContainer h2  {
     display: inline-block;
     font-size:2em;
@@ -177,6 +183,12 @@ body {
   font-size:32px;
   color: #3c3d61;
   margin-top:-5%;
+}
+
+@media (max-width: 767px){
+  .description{
+    font-size:27px;
+  }
 }
 
 .text {
